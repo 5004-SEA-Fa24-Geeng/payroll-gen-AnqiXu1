@@ -23,18 +23,15 @@ public final class FileUtil {
     public static final String PAY_STUB_HEADER =
             "employee_name,net_pay,taxes,ytd_earnings,ytd_taxes_paid";
 
-
-
     /**
      * Private constructor to prevent instantiation.
      */
     private FileUtil() {
-
     }
 
     /**
      * Reads in a text file and returns a list of strings, one for each line in the file.
-     * 
+     *
      * @param file the file name
      * @return a list of strings, one for each line in the file
      */
@@ -49,11 +46,9 @@ public final class FileUtil {
         return lines;
     }
 
-
-
     /**
      * Writes the lines to the file. Will backup teh file if it exists.
-     * 
+     *
      * @param outFile the file name
      * @param lines the lines to write
      */
@@ -63,7 +58,7 @@ public final class FileUtil {
 
     /**
      * Writes the lines to the file.
-     * 
+     *
      * @param outFile the file name
      * @param lines the lines to write
      * @param backup if true, will backup the file if it exists
